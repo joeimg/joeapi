@@ -406,6 +406,13 @@ if (file_exists(__DIR__ . '/install/installed.lock')) {
             // 将此处的URL替换为你想要跳转的页面的URL
             window.open('./admin', '_blank');
         }
+
+        function openNewLink() {
+            // 弹出消息框
+            alert("蓝奏云链接访问密码为：123");
+            // 在新窗口中打开新链接
+            window.open("https://wwxy.lanzouk.com/b00y9ttyna", "_blank");
+        }
     </script>
 </head>
 
@@ -428,9 +435,9 @@ if (file_exists(__DIR__ . '/install/installed.lock')) {
 
 
         <div class="button-container">
-            <button class="button-s" onclick="alert('准备开源！');">GitHub</button>
-            <button class="button-s" onclick="alert('准备开源！！');">Gitee</button>
-            <button class="button-s" onclick="alert('准备开源！');">蓝奏云</button>
+            <button class="button-s" onclick="window.open('https://github.com/joeimg/joeapi', '_blank')">GitHub</button>
+            <button class="button-s" onclick="window.open('https://gitee.com/joeimg/joeapi', '_blank')">Gitee</button>
+            <button class="button-s" onclick="openNewLink()">蓝奏云</button>
 
 
         </div>
